@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V - Zone Rouge</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Orbitron:wght@400;700;900&display=swap">
+</head>
+<body>
+  <!-- Écran d'intro -->
+  <div class="intro-screen" id="intro">
+    <div class="intro-v">𝕍</div>
+  </div>
+
+  <!-- Matrix fond -->
+  <canvas id="matrix"></canvas>
+
+  <!-- Rose + V + MASK -->
+  <div class="rose" id="rose">🌹</div>
+  <div class="v-glitch" id="vMain">𝕍</div>
+  <div class="v-mask" id="vMask">
+    <img src="mask.png" alt="Masque V">
+  </div>
+
+  <!-- Message Méliès -->
+  <div class="message-glitch-container" id="messageContainer">
+    <div class="message-glitch">MÉLIÈS EN JEU</div>
+  </div>
+
+  <!-- Terminal (inchangé) -->
+  <div class="terminal" id="terminal">
+    <div class="terminal-title">MESSAGE POUR TOI</div>
+    <div id="terminal-content">
+      <div class="code-line">
+        SYSTÈME : <span class="blink">_</span> Réseau V en ligne
+      </div>
+      <div class="code-line message-indice">
+        CLÉ = Remember...November 5
+      </div>
+      <div class="code-line code-message-important">
+        YWTZAJE RTN QF TZ ANAJSY QJX JYWJX HMJRNSJJ QF TZ QZRNJWJ UJSJYWJ
+      </div>
+      <div class="decode-zone">
+        <input type="text" id="decodeInput" placeholder="Tape le message déchiffré ici...">
+        <button id="decodeBtn">SOUMETTRE</button>
+        <div id="result" class="result"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
