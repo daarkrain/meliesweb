@@ -109,7 +109,7 @@ body {
   opacity: 0;
   z-index: 11;
   pointer-events: none;
-  width: clamp(60px, 14vw, 130px);
+  width: clamp(40px, 8vw, 80px);
   height: auto;
   filter: drop-shadow(0 0 20px #ff0040);
   transition: opacity 0.8s ease 2.8s;
