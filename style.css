@@ -44,6 +44,25 @@ body {
   animation: glitch-v-simple 1s infinite;
 }
 
+
+/* Masque dans l'intro */
+.intro-mask {
+  position: absolute;
+  bottom: 18%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(60px, 15vw, 100px);
+  height: auto;
+  filter: drop-shadow(0 0 20px #ff0040);
+  opacity: 0;
+  animation: mask-intro-appear 0.8s ease-out 0.6s forwards;
+}
+
+@keyframes mask-intro-appear {
+  from { opacity: 0; transform: translateX(-50%) scale(0.7); }
+  to   { opacity: 1; transform: translateX(-50%) scale(1); }
+}
+
 @keyframes glitch-v-simple {
   0%, 100% { transform: translateX(0); }
   20% { transform: translateX(-5px); }
@@ -100,36 +119,6 @@ body {
   50% { transform: translateY(-10px); }
 }
 
-/* Masque V - HORS du media query */
-.v-mask {
-  position: fixed;
-  top: 48%;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  z-index: 11;
-  pointer-events: none;
-  width: 45px;
-  height: 45px;
-  object-fit: contain;
-  filter: drop-shadow(0 0 8px #ff0040);
-  transition: opacity 0.8s ease 2.8s;
-}
-
-.v-mask.active {
-  opacity: 1;
-  animation: mask-float 3s ease-in-out infinite 3s;
-}
-
-@keyframes mask-float {
-  0%, 100% { transform: translateX(-50%) translateY(0) rotate(-2deg); }
-  50% { transform: translateX(-50%) translateY(-8px) rotate(2deg); }
-}
-
-body.victory .v-mask {
-  opacity: 0 !important;
-  transition: opacity 1s ease-out;
-}
 
 .message-glitch-container {
   position: fixed;
