@@ -103,15 +103,15 @@ body {
 /* Masque V - HORS du media query */
 .v-mask {
   position: fixed;
-  top: 14%;
+  top: 40%;
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
   z-index: 11;
   pointer-events: none;
-  width: clamp(40px, 8vw, 80px);
+  width: clamp(35px, 7vw, 60px);
   height: auto;
-  filter: drop-shadow(0 0 20px #ff0040);
+  filter: drop-shadow(0 0 12px #ff0040);
   transition: opacity 0.8s ease 2.8s;
 }
 
