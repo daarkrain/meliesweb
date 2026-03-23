@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('intro').classList.add('fade-out');
     document.getElementById('vMain').classList.add('active');
     document.getElementById('rose').classList.add('active');
-    document.getElementById('vMask').classList.add('active'); /* ← AJOUT */
+    // masque affiché dans l'intro uniquement
     document.getElementById('messageContainer').style.opacity = '1';
   }, 2500);
   
