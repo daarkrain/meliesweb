@@ -25,9 +25,9 @@ function decoderMessage() {
           MESSAGE POUR TOI
         </div>
         <div class="victory-message-terminal">
-          FELICITATION .. LA PREMIERE PARTIE DE LA CARTE T'ATTENDS LA BAS, VA LA CHERCHER...
-          <br><span class="signature">SIGNÉ </span>
-          <br><span class="signature">V</span>
+          FELICITATION .. LA PREMIERE PARTIE DE LA CARTE T'ATTENDS LA BAS, VA LA CHERCHER...ET SCAN LE PROCHAIN QR CODE DANS CET EMPLACEMENT
+          <br><span class="signature">SIGNÉ  V </span>
+        
         </div>
       `;
     }, 500);
